@@ -7,12 +7,12 @@ import Register from './components/Register/Register';
 import Logo from './components/Logo/Logo';
 import Rank from './components/Rank/Rank';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
-import FaceRecognition from './components/FaceRecognition/FaceRecognition'
-
+import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import Config from './config/config';
 import './App.css';
 
 const app = new Clarifai.App({
-  apiKey: '03310375b408456fa55512912dd1d0a2'
+  apiKey: Config._config.apiKey
  });
 
 const particleOptions = {
